@@ -24,6 +24,8 @@ class User {
     }
     
 	static signIn(req,res) {
+        console.log("msk signin");
+        
         UserModel.findOne({email:req.body.email})
         .then(dataUser=>{
             if(dataUser !== null) {
@@ -37,6 +39,17 @@ class User {
             }else{
                 res.status(500).json({message:"invalid email/password"})
             } 
+        })
+        .catch(err=>{
+            res.status(500).json({message:err.message})
+        })
+    }
+
+    static showOne(req,res) {
+        const decoded = jwt.verify(req.headers.token,process.env.JWT_SALT)
+        UserModel.findOne({_id: decoded.userId})
+        .then(dataUser=>{
+            res.status(200).json(dataUser)
         })
         .catch(err=>{
             res.status(500).json({message:err.message})
