@@ -3,12 +3,24 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors');
+const mongoose = require('mongoose');
+require('dotenv').config()
+
+mongoose.connect('mongodb://alprak:rotitawarmanis12@ds125381.mlab.com:25381/hacktivpress', function(err){
+  if(err) {
+    console.log(err);
+  }else{
+    console.log("db connected");
+  }
+});
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 
+app.use(cors());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
