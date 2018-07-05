@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bookworm-storage-server",
+  "private_key_id": "3854df6df0d3f021d6bf508a8b06606dbd038157",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDb0S2Z+Kd+KqFN\n3Ijz+39u3G71zLz46KhlFBAbq0yNvSuAuzMAKaw045IgweE8b6VhqYS8GvHTSlEZ\nsBJ7LzkJ+NdJT/sQiOCrsstex1FJMVCtDM3zq85oiryMye93Lez3e4E2X30ji3SA\ngTW1vJOTWJtadfh9nC7mqFm44BZtURHm9imDnq1xx9XgWTaUVFk6spu04LTVRixn\nI45o8FVIbmnQXA5yJr9BB77LDockzfzvKj7qmqamH3IVBcKEGOa2g0368w86u7F+\niwsPHW6qSo8EilSu+jj/yqz4JzKsZJFNrVTZdSqiCAmG3UX+dgPOs1Zx+7jjBDYd\nqiMXKqvXAgMBAAECggEAQs4cU06QLNZs5npvPuNA0+L3cAl0pxsiTnHeAWK6pdsH\nlRyPf+2qUfqVpxH1T4ZI11kLJ5Xyx7mu0yVBQKHV7nNrjnLZxSksStJQX3IpAJsV\nvzoEf5lH5lq/ufQHLIvPGFm3J9y2be6Mjh92wNBac2367O+sgRRN5rjkZ7zm4/qu\ngiqeXd0Z7+pqlyaWpV6vsmxHzJKP+SX+36/7r1Jbe/vIIviuoi2yE0l8C0QbqQp3\nJCiOgkcKcAhVXft8Plt+urT/hBxzs2Oxxanw3Qh3wfSNdnSnfRXbKhpb/+hvCH3Y\nOVDxLIuZ5DHeQrEbYxDCZ9EntXokKB+qbrhESJFHnQKBgQD8mDu1mWuk4fEzHSbv\nW6aO6TEW3YCuE2A0uGeWCND/bfDT6O77UAKHdhhQblDs+wK9ZBhp0u4FN5gFzCrj\nLXD1UEogvl5E1vvN5MUHpHhz2OqvamugoizNvBTAe4EHjOIG9rDOgSdzyEqsglN/\nNP8XFBYliLEHrYhIoucd/paM6wKBgQDex9JIKC72K0JOMffEd9qGPa/WnTXmaPtF\nZwQpLKowY5PTf7Rc1z4h/oUlLi25+Pn/rMzDuUf4K15VSvvqJLtZk6zU7BIALNYd\nxNJqiWQbWY+kitRrhhXjNZqpRMPYyaCr6Ok54erUk2XxsbpXM4aZbxoNJwoi3wYs\ni1o8UjXxxQKBgA9OHhgT0rzr39SMCKbqM75nDM1o4HorvGGVZtllcVx4yeXdMFXT\n9ENG+ZQuCwNA9lqJbR1EZZ21T6XSSCr5vuVuVv+C6W1cZWeFXBbpdU73rsiwNxNF\noFda9RrwoNHXTH7FhdMNalmOok+vmeWUTXyVf/4IOUnQzvgvvrdHjNG/AoGBALd2\n0bqwtPPvbhxdVBENLv4MQQm50BCe9gcSrj+GU+Wjq7KqYYtvivCN3XJgFDIqUx92\nW+73X8iFVpthNBKAC3XagqOagbx5MB+13h70ZGeNmxjDZ+ngs5e4plStl6epbFMG\nbUNIxI4pkPO5DJ8RhNBIyah5NQTArCH05Ov2PAyNAoGBAL8pTpd9qY2CGlMgVPgg\nlU/V7KLG/kgHPzFf7bTo/ONVIEZTMB3Sg1+icyRUJSihi13Bucz3pcWj44c27JaD\n8Fo2PgQwOVN288bmsJJtXudWEGXjbKEgxdbCN5f+ILEFql44odfhVbJx54RYdDd9\nWReG//NbeVlpGyDezC7Pyk8i\n-----END PRIVATE KEY-----\n",
+  "client_email": "ecommerce-bookworm@bookworm-storage-server.iam.gserviceaccount.com",
+  "client_id": "107915581122392614805",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ecommerce-bookworm%40bookworm-storage-server.iam.gserviceaccount.com"
+}
