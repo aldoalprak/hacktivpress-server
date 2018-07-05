@@ -33,13 +33,35 @@ class Article {
     }
 
     static showOne(req,res) {
-        ArticleModel.find({title:req.headers.title})
+        ArticleModel.find({_id:req.params.id})
         .then(dataArticle=>{
             res.status(200).json({dataArticle})
         })
         .catch(err=>{
             res.status(500).json({message:err.message})
         })
+    }
+
+    static showByCategory() {
+        ArticleModel.find({category:req.body.category})
+        .then(dataArticle=>{
+            res.status(200).json({dataArticle})
+        })
+        .catch(err=>{
+            res.status(500).json({message:err.message})
+        })
+
+    }
+
+    static showByAuthor() {
+        ArticleModel.find({userId:req.body.userId})
+        .then(dataArticle=>{
+            res.status(200).json({dataArticle})
+        })
+        .catch(err=>{
+            res.status(500).json({message:err.message})
+        })
+
     }
 
     static delete(req,res) {
@@ -71,13 +93,13 @@ class Article {
 
     static update(req,res) {
         console.log(req.headers.token,"xxxxxxxxxxx");
-        ArticleModel.find({title:req.params.title})
+        ArticleModel.find({_id:req.params.id})
         .then(dataArticle=>{
             if(dataArticle) {
                 const decoded = jwt.verify(req.headers.token,process.env.JWT_SALT)
                 // console.log(dataArticle)
                 if(dataArticle[0].userId == decoded.userId) {
-                    ArticleModel.updateOne({title:req.params.title},{$set:req.body})
+                    ArticleModel.updateOne({_id:req.params.id},{$set:req.body})
                     .then(result=>{
                         res.status(200).json({message:"article updated",result})
                     })

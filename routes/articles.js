@@ -3,9 +3,9 @@ const Article =require('../controllers/articles_controller.js')
 
 router.post('/add', Article.add)
 router.get('/show', Article.show)
-router.get('/showone', Article.showOne)
+router.get('/showone/:id', Article.showOne)
 router.delete('/delete/:id', Article.delete)
-router.put('/update/:title', Article.update)
+router.put('/update/:id', Article.update)
 
 
 module.exports = router
