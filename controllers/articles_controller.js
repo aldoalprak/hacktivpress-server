@@ -24,16 +24,20 @@ class Article {
 
     static show(req,res) {
         ArticleModel.find()
-        .then(dataArticles=>{
-            res.status(200).json({message:"show articles",dataArticles})
+        .populate("userId","username")
+        .exec(function(err,dataArticles){
+            if(err) {
+                res.status(500).json({message:err})
+            }else{
+                console.log("masukkk");
+                res.status(200).json({message:"show articles",dataArticles})
+            }
         })
-        .catch(err=>{
-            res.status(500).json({message:err.message})
-        })
+
     }
 
     static showOne(req,res) {
-        ArticleModel.find({_id:req.params.id})
+        ArticleModel.find({title:req.params.title})
         .then(dataArticle=>{
             res.status(200).json({dataArticle})
         })
