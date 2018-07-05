@@ -4,6 +4,9 @@ const ObjectId = Schema.Types.ObjectId;
 
 const articleSchema = new Schema({
     title: String,
+    commentId:[
+        {type: ObjectId}
+    ],
     content: String,
     category: String,
     userId:{type: ObjectId, ref: 'User' }
